@@ -526,16 +526,7 @@ function Env(name, opts) {
         );
       }
     }
-    /**
-     *
-     * 示例:$.time('yyyy-MM-dd qq HH:mm:ss.S')
-     *    :$.time('yyyyMMddHHmmssS')
-     *    y:年 M:月 d:日 q:季 H:时 m:分 s:秒 S:毫秒
-     *    其中y可选0-4位占位符、S可选0-1位占位符，其余可选0-2位占位符
-     * @param {string} fmt 格式化参数
-     * @param {number} 可选: 根据指定时间戳返回格式化日期
-     *
-     */
+   
     time(fmt, ts = null) {
       const date = ts ? new Date(ts) : new Date();
       let o = {
