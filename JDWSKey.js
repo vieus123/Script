@@ -1,14 +1,3 @@
-/*
- * 1、打开App，自动捕抓 wskey 上传
- * 2、点击APP-个人中心，或 个人中心 下拉刷新，自动捕抓 wskey 上传
- * 注：如有变更才会上传，如果 wskey 没变，不会重复上传。
- * Boxjs填写TGBotToken和TGUserIDs
- * Boxjs地址 https://raw.githubusercontent.com/githubdulong/Script/master/boxjs.json
-
- * 更新日期：
-  2024.04.28自定义TGBotToken、TGUserIDs
- */
-
 const $ = new Env('♨️京东上传 Wskey');
 let CK = $request.headers['Cookie'] || $request.headers['cookie'];
 
